@@ -1,0 +1,30 @@
+nav{
+    width:100%;
+    /*background-color:gold;*/
+    color:white;
+    padding: 4px 0;
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 10;
+
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    border-radius:100%;
+}
+
+nav ul li{
+    list-style:none;
+    display:inline-block;
+    margin: 5px 20px;
+    font-size:16px;
+}
+
+.dark-nav{
+    background: rgb(45, 45, 228);
+    transition: 0.5s;
+}
