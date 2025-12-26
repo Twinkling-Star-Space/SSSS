@@ -34,7 +34,7 @@ const [result, setResult] = React.useState("");
 
 
   return (
-    <div className='contact' id="contact">
+    <div className='contact' name="contact">
         <div className="contact-col">
         <h3>Send us message <img src={msg_icon_1} alt="" /></h3>
         <p>Feel free to reach out us. We are just a mail, phone and text away.</p>

@@ -8,7 +8,7 @@ import arrow from '../../Assets/dark-arrow.png'
 
 const Campus = () => {
   return (
-    <div className='campus'>
+    <div className='campus' name='campus'>
         <div className="gallery">
             <img src={gallery1} alt="" />
             <img src={gallery2} alt="" />

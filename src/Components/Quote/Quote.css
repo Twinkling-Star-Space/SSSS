@@ -1,0 +1,29 @@
+.quote{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:60px;
+}
+
+.photo{
+    align-items: center;
+    justify-content: center;
+}
+
+.quote p{
+    font-size:36px;
+}
+
+.quote .photo img{
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+.quote p img{
+    width: 40px;
+}
+
+.quote p .unquote{
+    width:40px;
+    transform: rotate(180deg);
+}

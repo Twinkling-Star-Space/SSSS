@@ -8,6 +8,7 @@ import Campus from './Components/Campus/Campus'
 import Testimonials from './Components/Testimonials/Testimonials'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
+import Quote from './Components/Quote/Quote'
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <div className="container">
+         <Title title="Quote from our Principal"/>
+        <Quote/>
+
         <Title subTitle="Our PROGRAM" title="What We Offer"/>
         <Programs/>
           <About/>

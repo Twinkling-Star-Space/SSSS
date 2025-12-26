@@ -18,15 +18,16 @@ const Testimonials = () => {
     slider.current.style.transform = `translateX(${tx}%)`;
   };
 
-  const slideBackward = () => {
+const slideBackward = () => {
     if (tx < 0) {
-      tx += 25;
+        tx += 25;
+        slider.current.style.transform = `translateX(${tx}%)`;
     }
-    slider.current.style.transform = `translateX(${tx}%)`;
-  };
+};
+
 
   return (
-    <div className="testimonials" id="testimonials">
+    <div className="testimonials" name="testimonials">
       <img
         src={back_icon}
         alt=""
