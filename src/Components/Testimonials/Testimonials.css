@@ -75,3 +75,55 @@
     font-size: 14px;
     color: gray;
 }
+
+
+/*---------media query ----------------*/
+
+@media(max-width: 800px){
+    .testimonials{
+        padding: 0 40px;
+    }
+
+    .next-btn, .back-btn{
+        padding: 10px;
+        width: 50px;
+
+    }
+
+    .testimonials ul li{
+        padding:10px;
+
+    }
+
+    .slide{
+        padding: 10px;
+    }
+
+    .slide img{
+        width: 50px;
+        border: 3px green;
+    }
+
+
+
+}
+
+@media(max-width: 945px){
+    .user-info h3{
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width: 600px){
+    .user-info{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+
+    .slider p{
+        font-size: 12px;
+    }
+}

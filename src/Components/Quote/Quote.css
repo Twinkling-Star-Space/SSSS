@@ -1,29 +1,90 @@
-.quote{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:60px;
+.quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
 
-.photo{
-    align-items: center;
-    justify-content: center;
+.photo {
+  align-items: center;
+  justify-content: center;
 }
 
-.quote p{
-    font-size:36px;
+.quote p {
+  font-size: 36px;
 }
 
-.quote .photo img{
+.quote .photo img {
+  border-radius: 50%;
+  border: 1px solid grey;
+  width: 180px;
+}
+
+.quote p img {
+  width: 40px;
+}
+
+.quote p .unquote {
+  width: 40px;
+  transform: rotate(180deg);
+}
+
+/*---------media query-----------*/
+
+@media (max-width: 850px) {
+  .quote .photo img {
     border-radius: 50%;
     border: 1px solid grey;
-}
+    width: 120px;
+  }
 
-.quote p img{
-    width: 40px;
-}
+  .quote .photo h2 {
+    font-size: 18px;
+  }
 
-.quote p .unquote{
-    width:40px;
+  .quote .photo h3 {
+    font-size: 16px;
+  }
+
+  .quote p {
+    font-size: 25px;
+  }
+
+  .quote p img {
+    width: 30px;
+  }
+
+  .quote p .unquote {
+    width: 30px;
     transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .quote .photo img {
+    border-radius: 50%;
+    border: 1px solid grey;
+    width: 90px;
+  }
+
+  .quote .photo h2 {
+    font-size: 12px;
+  }
+
+  .quote .photo h3 {
+    font-size: 10px;
+  }
+
+  .quote p {
+    font-size: 15px;
+  }
+
+  .quote p img {
+    width: 20px;
+  }
+
+  .quote p .unquote {
+    width: 20px;
+    transform: rotate(180deg);
+  }
 }

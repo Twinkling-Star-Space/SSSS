@@ -19,6 +19,7 @@
 .about_img{
     width:100%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .play_icon{
@@ -27,6 +28,7 @@
     left:30%;
     transform: translate(-50%, -50%);
     position:absolute;
+    cursor: pointer;
 }
 
 .about-right h3{
@@ -48,4 +50,23 @@
     color: #555;
     line-height: 1.6;
     margin-bottom: 30px;
+}
+
+
+/*--------media query---------*/
+
+@media(max-width: 800px){
+    .about{
+        flex-direction: column;
+    }
+
+    .about-left{
+        flex-basis: 100%;
+        margin:20px;
+        order:2;
+    }
+
+    .about-right{
+        flex-basis: 100%;
+    }
 }
