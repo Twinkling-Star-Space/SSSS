@@ -14,12 +14,14 @@ import VideoPlayer from './Components/VideoPlayer/VideoPlayer'
 import Faculty from './Components/Faculty/Faculty'
 import Register from './Components/Register/Register'
 import LatestEvent from './Components/LatestEvent/LatestEvent'
+// import AboveNav from './Components/AboveNav/AboveNav'
 
 const App = () => {
   const [playState, setPlayState] = useState(false);
 
   return (
     <div>
+      {/* <AboveNav/> */}
       <Navbar />
       <Hero />
       <div className="outer-container">
