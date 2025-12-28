@@ -1,72 +1,86 @@
-.about{
-    margin: 100px auto;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    
+.about {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  gap: 10px;
 }
 
-.about-left{
-    flex-basis: 45%;
-    position:relative;
+/* Wrapper for image & play icon */
+.about-img-wrapper {
+  position: relative;
+  width: 100%;
 }
 
-.about-right{
-    flex-basis: 55%;
+.about_img {
+  width: 100%;
+  cursor: pointer;
+  display: block;
 }
 
-.about_img{
-    width:100%;
-    border-radius: 10px;
-    cursor: pointer;
+/* Play icon perfectly centered */
+.play_icon {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
-.play_icon{
-    width:60px;
-    top:50%;
-    left:30%;
-    transform: translate(-50%, -50%);
-    position:absolute;
-    cursor: pointer;
+/* Text styles */
+.about h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 20px 0;
+  color: #333;
+  max-width: 500px;
 }
 
-.about-right h3{
-    font-weight: 600;
-    font-size: 16px;
-    color: blue;
+.about p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
-.about-right h2{
-    font-weight: 700;
-    font-size: 36px;
-    margin: 20px 0;
-    color: #333;
-    max-width: 500px;
+/* Button */
+.about button {
+  display: flex;
+  gap: 20px;
+  border: none;
+  background: #f1c40f;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.about-right p{
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 30px;
+.about button img {
+  width: 30px;
 }
 
+/* ---------- Responsive ---------- */
 
-/*--------media query---------*/
+@media (max-width: 800px) {
+  .play_icon {
+    width: 40px;
+  }
 
-@media(max-width: 800px){
-    .about{
-        flex-direction: column;
-    }
+  .about button {
+    font-size: 14px;
+  }
+}
 
-    .about-left{
-        flex-basis: 100%;
-        margin:20px;
-        order:2;
-    }
+@media (max-width: 500px) {
+  .play_icon {
+    width: 30px;
+  }
 
-    .about-right{
-        flex-basis: 100%;
-    }
+  .about button {
+    font-size: 12px;
+  }
 }

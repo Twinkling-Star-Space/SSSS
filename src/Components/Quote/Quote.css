@@ -11,38 +11,62 @@
 }
 
 .quote p {
-  font-size: 36px;
+  font-size: 24px;
+}
+
+.quote .details h4 img{
+  width:20px;
 }
 
 .quote .photo img {
-  border-radius: 50%;
-  border: 1px solid grey;
-  width: 180px;
+  width: 350px;
+  border-radius: 20px;
 }
 
-.quote p img {
+.quote .details p img {
   width: 40px;
 }
 
-.quote p .unquote {
-  width: 40px;
-  transform: rotate(180deg);
+.quote .details{
+  display:flex;
+  flex-direction: column;
+  gap:30px;
 }
+
+.quote .details .principal_details h2, .quote .details .principal_details h3{
+    color: #434343;
+    font-style: italic;
+    font-family: Sacramento, cursive !important;
+    font-weight: 600;
+}
+
+.quote .details h4{
+  display:flex;
+  gap:10px;
+}
+
 
 /*---------media query-----------*/
 
 @media (max-width: 850px) {
+.quote{
+  gap:40px;
+}
+
   .quote .photo img {
-    border-radius: 50%;
-    border: 1px solid grey;
-    width: 120px;
+    width: 200px;
+    border-radius: 20px;
   }
 
-  .quote .photo h2 {
+  .quote .details h4{
+    font-size: 14px;
+  }
+
+  .quote .photo .principal_details h2 {
     font-size: 18px;
   }
 
-  .quote .photo h3 {
+  .quote .photo .principal_details h3 {
     font-size: 16px;
   }
 
@@ -50,41 +74,45 @@
     font-size: 25px;
   }
 
-  .quote p img {
+  .quote .details p img {
     width: 30px;
   }
 
-  .quote p .unquote {
-    width: 30px;
-    transform: rotate(180deg);
-  }
+  .quote .details{
+  gap:20px;
+}
+
 }
 
 @media (max-width: 650px) {
+.quote{
+  gap:30px;
+}
+
   .quote .photo img {
-    border-radius: 50%;
-    border: 1px solid grey;
-    width: 90px;
+    width: 150px;
+    border-radius: 20px;
   }
 
-  .quote .photo h2 {
+  .quote .details .principal_details h2 {
     font-size: 12px;
   }
 
-  .quote .photo h3 {
+  .quote .details .principal_details h3 {
     font-size: 10px;
   }
 
-  .quote p {
+  .quote .details p {
     font-size: 15px;
   }
 
-  .quote p img {
+  .quote .details p img {
     width: 20px;
   }
 
-  .quote p .unquote {
-    width: 20px;
-    transform: rotate(180deg);
-  }
+  .quote .details{
+  gap:10px;
+}
+
+
 }

@@ -11,10 +11,13 @@ nav{
 
 }
 
+
+
 .logo{
     width: 100px;
     height: auto;
     border-radius:100%;
+    border: 1px solid black;
 }
 
 nav ul li{
@@ -25,7 +28,7 @@ nav ul li{
 }
 
 .dark-nav{
-    background: rgb(44, 44, 144);
+    background: rgb(6, 103, 164);
     transition: 0.5s;
     }
 
