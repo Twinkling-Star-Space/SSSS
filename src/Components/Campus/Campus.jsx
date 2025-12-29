@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import "./Campus.css";
-import gallery1 from "../../Assets/gallery1.png";
-import gallery2 from "../../Assets/gallery2.png";
-import gallery3 from "../../Assets/gallery3.png";
-import gallery4 from "../../Assets/gallery4.png";
-import gallery5 from "../../Assets/gallery4.png";
-import gallery6 from "../../Assets/gallery4.png";
-import gallery7 from "../../Assets/gallery4.png";
-import gallery8 from "../../Assets/gallery4.png";
-import gallery9 from "../../Assets/gallery4.png";
-import gallery10 from "../../Assets/gallery4.png";
-import gallery11 from "../../Assets/gallery4.png";
-import gallery12 from "../../Assets/gallery4.png";
-import arrow from "../../Assets/dark-arrow.png";
-import back_icon_2 from "../../Assets/back_icon_2.png";
-import next_icon_2 from "../../Assets/next_icon_2.png";
+import gallery1 from "../../assets/gallery1.png";
+import gallery2 from "../../assets/gallery2.png";
+import gallery3 from "../../assets/gallery3.png";
+import gallery4 from "../../assets/gallery4.png";
+import gallery5 from "../../assets/gallery4.png";
+import gallery6 from "../../assets/gallery4.png";
+import gallery7 from "../../assets/gallery4.png";
+import gallery8 from "../../assets/gallery4.png";
+import gallery9 from "../../assets/gallery4.png";
+import gallery10 from "../../assets/gallery4.png";
+import gallery11 from "../../assets/gallery4.png";
+import gallery12 from "../../assets/gallery4.png";
+import arrow from "../../assets/dark-arrow.png";
+import back_icon_2 from "../../assets/back_icon_2.png";
+import next_icon_2 from "../../assets/next_icon_2.png";
 
 const Campus = () => {
   const images = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7 ,gallery8, gallery9, gallery10, gallery11, gallery12];
@@ -99,7 +99,7 @@ const Campus = () => {
                 src={images[index]}
                 alt={`Gallery ${index + 1}`}
               />
-              
+
               <img className="more-information" src={arrow} alt="" />
 
             </div>
