@@ -1,0 +1,45 @@
+.login {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative; /* 🔑 important */
+}
+
+.login img,
+.dropdown-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-options {
+  position: absolute; /* 🔑 anchor to .login */
+  top: 100%;          /* directly below login */
+  left: 0;
+  margin-top: 2px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+  list-style: none;
+  padding:10px;
+  min-width: 160px;
+  z-index: 100;
+}
+
+/* Items */
+.dropdown-options li {
+  width:125px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;;
+}
+
+.dropdown-options li:hover {
+  background: #ffffff;
+}

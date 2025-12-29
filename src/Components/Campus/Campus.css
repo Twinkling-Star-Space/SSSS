@@ -1,31 +1,335 @@
-.campus{
-    margin:80px auto;
-    width:90%;
+.campus {
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.campus .option-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.campus .option-btn button {
+    border: 1px solid black;
+    background: none;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.campus .option-btn button:hover {
+    background: rgb(84, 82, 82);
+     color:white;
+     border:none;
+}
+
+.campus .option-btn .search-more {
+    background:#f37f7f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    gap:10px;
+}
+
+.campus .option-btn .search-more:hover {
+    background-color: #be5050;
+     color:white;
+}
+
+.gallery-wrapper {
+    position: relative;
+    height: 65vh;
+    margin: 10px auto;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.gallery {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.image-container::after {
+  content: "Read More Me";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* position at the bottom */
+  width: 100%;
+  height: 100%; /* cover bottom 30% of image */
+  background: rgba(39, 37, 37, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-100%); /* start hidden below */
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Show overlay on hover */
+.image-container:hover::after {
+  opacity: 1;
+  transform: translateY(0); /* slide up */
+}
+
+
+
+
+.gallery .more-information {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    right: 10px;
+    margin-top:-50px;/* Use top instead of negative margin */
+    padding: 8px; /* Fixed padding instead of percentage */
+    border-radius: 50%; /* Makes it circular */
+    cursor: pointer;
+    z-index: 100; /* Ensure it's above images */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add some shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.gallery .more-information:hover {
+    background: #eb9a9a;
+    transform: scale(1.1); /* Scale instead of changing width/height */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+/* ALL IMAGES - Smooth transitions */
+.image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    
+    /* Single smooth transition */
+    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    /* Staggered timing: Closer images move first */
+    transition-delay: calc(var(--distance) * 0.06s);
+    
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0; /* Hide by default, will be shown if within range */
+}
+
+/* Show only images within visible range */
+.image-container[style*="--position: -3"],
+.image-container[style*="--position: -2"],
+.image-container[style*="--position: -1"],
+.image-container[style*="--position: 0"],
+.image-container[style*="--position: 1"],
+.image-container[style*="--position: 2"],
+.image-container[style*="--position: 3"] {
+    opacity: 1;
+}
+
+.image-container img {
+    width: 280px;
+    height: 50vh;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+}
+
+
+/* POSITIONS BASED ON DISTANCE FROM CENTER */
+
+/* Images to the LEFT of center (position negative) */
+.image-container[style*="--position: -1"] {
+    transform: translate(-50%, -50%) translateX(-105%) scale(0.85);
+    filter: blur(2px) brightness(0.8);
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.image-container[style*="--position: -2"] {
+    transform: translate(-50%, -50%) translateX(-210%) scale(0.75);
+    filter: blur(3px) brightness(0.7);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.image-container[style*="--position: -3"] {
+    transform: translate(-50%, -50%) translateX(-315%) scale(0.65);
+    filter: blur(4px) brightness(0.6);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+/* Images to the RIGHT of center (position positive) */
+.image-container[style*="--position: 1"] {
+    transform: translate(-50%, -50%) translateX(105%) scale(0.85);
+    filter: blur(2px) brightness(0.8);
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.image-container[style*="--position: 2"] {
+    transform: translate(-50%, -50%) translateX(210%) scale(0.75);
+    filter: blur(3px) brightness(0.7);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.image-container[style*="--position: 3"] {
+    transform: translate(-50%, -50%) translateX(315%) scale(0.65);
+    filter: blur(4px) brightness(0.6);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+/* ACTIVE IMAGE (CENTER) */
+.image-container.active {
+    transform: translate(-50%, -50%) scale(1.05);
+    filter: blur(0) brightness(1.1);
+    opacity: 1;
+    z-index: 10;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    transition-delay: 0s; /* Center changes immediately */
+}
+
+/* Make center image's transition instant, others staggered */
+.image-container:not(.active) {
+    transition-delay: calc(var(--distance) * 0.06s);
+}
+
+/* Hover effect for non-active images */
+.image-container:not(.active):hover {
+    filter: blur(1px) brightness(0.9);
+    transform: translate(-50%, -50%) 
+               translateX(calc(var(--position) * 105%)) 
+               scale(0.9);
+}
+
+.change-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.change-options img {
+    width: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.change-options img:hover:not(.disabled) {
+    transform: scale(1.1);
+}
+
+.change-options img.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.counter {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    min-width: 80px;
     text-align: center;
 }
 
-.gallery{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-
-}
-
-.gallery img{
-    width: 23%;
-}
-
-
-/*-----media query--------------*/
-
-@media(max-width: 800px){
-    .campus .gallery{
-        flex-wrap: wrap;
+/* Media Queries */
+@media (max-width: 1200px) {
+    .image-container img {
+        width: 240px;
+        height: 45vh;
     }
+    
+    .image-container[style*="--position: 1"],
+    .image-container[style*="--position: -1"] {
+        transform: translate(-50%, -50%) translateX(95%) scale(0.85);
+    }
+    
+    .image-container[style*="--position: -1"] {
+        transform: translate(-50%, -50%) translateX(-95%) scale(0.85);
+    }
+}
 
-    .gallery img{
-        width: 48%;
-        margin-bottom:25px;
+@media (max-width: 800px) {
+    .gallery-wrapper {
+        height: 50vh;
+    }
+    
+    .image-container img {
+        width: 180px;
+        height: 40vh;
+    }
+    
+    /* Adjust positions for mobile - show fewer images */
+    .image-container[style*="--position: 2"],
+    .image-container[style*="--position: -2"],
+    .image-container[style*="--position: 3"],
+    .image-container[style*="--position: -3"] {
+        opacity: 0;
+    }
+    
+    .image-container[style*="--position: 1"],
+    .image-container[style*="--position: -1"] {
+        transform: translate(-50%, -50%) translateX(85%) scale(0.8);
+    }
+    
+    .image-container[style*="--position: -1"] {
+        transform: translate(-50%, -50%) translateX(-85%) scale(0.8);
+    }
+    
+    .change-options img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-wrapper {
+        height: 40vh;
+    }
+    
+    .image-container img {
+        width: 140px;
+        height: 35vh;
+    }
+    
+    /* Show only center and immediate neighbors on mobile */
+    .image-container[style*="--position: 1"],
+    .image-container[style*="--position: -1"] {
+        opacity: 0.8;
+    }
+    
+    .image-container[style*="--position: 2"],
+    .image-container[style*="--position: -2"] {
+        opacity: 0;
     }
 }

@@ -32,7 +32,7 @@ const eventsData = [
 
 const LatestEvent = () => {
     return (
-        <div className='news-container'>
+        <div className='news-container events' >
             <div className="latest-events">
                 {eventsData.map((event, index) => (
                     <EventCard
