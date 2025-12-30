@@ -1,16 +1,16 @@
 nav{
     width:100%;
-    /*background-color:gold;*/
-    color:white;
+    background-color:rgb(238, 235, 222);
+    color:black;
     padding: 4px 0;
     position:fixed;
     display:flex;
     justify-content:space-between;
     align-items:center;
     z-index: 10;
+    opacity:0.5;
 
 }
-
 
 
 .logo{
@@ -30,6 +30,8 @@ nav ul li{
 .dark-nav{
     background: rgb(6, 103, 164);
     transition: 0.5s;
+    color:white;
+    opacity:1;
     }
 
 .menu-icon{
