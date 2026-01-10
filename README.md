@@ -1,16 +1,71 @@
-# React + Vite
+# School Website Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 About the Project
 
-Currently, two official plugins are available:
+This repository contains the source code for a **school website project** that I am currently developing. The project is being built with official **permission** and is intended to be used as the **official school website in the future**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The website aims to provide an informative, user-friendly, and modern digital platform for students, teachers, parents, and visitors.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Project Objectives
 
-## Expanding the ESLint configuration
+* Create a professional and responsive school website
+* Provide easy access to school-related information
+* Improve online presence and communication
+* Ensure scalability for future updates and features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌐 Features (Planned & Implemented)
+
+* Home page with school overview
+* About the school
+* Academic information
+* Notices and announcements
+* Gallery and events
+* Contact information
+* Responsive design for all devices
+*Route of buses in the locality
+*Page for infrastructure of school
+
+---
+
+## 🛠️ Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* React
+
+---
+
+## 🚧 Project Status
+
+🔧 **Currently under active development**
+
+This project is still in progress and will be updated regularly with new features, improvements, and optimizations.
+
+---
+
+## ⚠️ Usage & Permission
+
+This project is developed with **official permission** for educational and institutional use.
+Unauthorized copying or commercial use without permission is not allowed.
+
+---
+
+## 🤝 Contributions
+
+At the moment, this project is maintained by me.
+Contributions may be considered in the future if required.
+
+---
+
+## 📬 Contact
+
+If you have any questions, suggestions, or feedback, feel free to reach out.
+
+---
+
+**⭐ If you find this project useful, consider giving it a star!**
