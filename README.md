@@ -1,6 +1,8 @@
 # School Website Project
 
-## Note: This project is still under development. I have not deployed it yet. Therefore, I have repositories above and documentation below along with some UI designs.
+## Note: This project is still under development. I have not deployed it yet. Therefore, I have repositories above and documentation.
+
+## I have made a folder for the UI specially to see how it look like in local server.
 
 ## 📌 About the Project
 
