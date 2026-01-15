@@ -1,5 +1,7 @@
 # School Website Project
 
+## Note: This project is still under development. I have not deployed it yet. Therefore, I have repositories above and documentation below along with some UI designs.
+
 ## 📌 About the Project
 
 This repository contains the source code for a **school website project** that I am currently developing. The project is being built with official **permission** and is intended to be used as the **official school website in the future**.
@@ -65,6 +67,8 @@ Contributions may be considered in the future if required.
 ## 📬 Contact
 
 If you have any questions, suggestions, or feedback, feel free to reach out.
+Gitgub: Twinkling-Star-Space
+Email: diplalthakurbarhi@gmail.com
 
 ---
 
