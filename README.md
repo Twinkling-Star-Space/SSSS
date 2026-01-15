@@ -2,8 +2,6 @@
 
 ## Note: This project is still under development. I have not deployed it yet. Therefore, I have repositories above and documentation.
 
-## I have made a folder for the UI specially to see how it look like in local server.
-
 ## 📌 About the Project
 
 This repository contains the source code for a **school website project** that I am currently developing. The project is being built with official **permission** and is intended to be used as the **official school website in the future**.
