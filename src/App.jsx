@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Programs from "./Components/Programs/Programs";
@@ -19,7 +19,6 @@ import Hero_details from "./Components/Hero_details/Hero_details";
 
 const Home = ({ setPlayState, playState }) => (
   <>
-    <Navbar/>
     <Hero />
     <div className="outer-container">
       <div className="container">
@@ -68,9 +67,8 @@ const App = () => {
   const [playState, setPlayState] = useState(false);
 
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
-
       <Routes>
         <Route
           path="/"
@@ -79,7 +77,7 @@ const App = () => {
 
         <Route path="/hero-details" element={<Hero_details />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 };
 
