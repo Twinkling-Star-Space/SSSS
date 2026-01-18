@@ -1,0 +1,91 @@
+.register{
+    background:  rgb(6, 103, 164);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:48px;
+    height:22vh;
+    gap:10%;
+    
+}
+
+ .register .fill{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+
+
+}
+
+.register .fill h2{
+    font-size: 28px;
+    font-weight: 200;
+    color:white;
+
+}
+
+.register .fill button{
+    width:180px;
+    padding:10px 3px;
+    background: transparent;
+    border: 1px solid white;
+    color:white;
+    font-size: 16px;
+    
+}
+
+.register .fill button:hover{
+    width:183px;
+}
+
+
+
+/*---------media query-------------*/
+
+@media(max-width:850px){
+
+    
+ .register .fill{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+
+
+}
+
+.register .fill h2{
+    font-size: 20px;
+
+}
+
+.register .fill button{
+    width:160px;
+    padding:6px 2px;
+    font-size: 12px;
+    
+}
+
+.register .fill button:hover{
+    width:163px;
+}
+
+}
+
+@media(max-width:500px){
+    .register{
+        height:24vh;
+        display:block;
+        padding-top:5%;
+        padding-bottom:5%;
+        gap:30px;
+    }
+
+    .register .f2{
+        margin-top:5px;
+    }
+
+}

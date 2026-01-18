@@ -1,0 +1,144 @@
+/* Hero_details.css */
+
+/* Global Settings */
+.hero-container {
+  font-family: 'Inter', sans-serif;
+  color: #2d3748;
+  background-color: #fff;
+}
+
+/* Header & Image */
+.hero-image-wrapper img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+}
+
+.school-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.school-header h1 {
+  font-size: 2.5rem;
+  color: #1a365d;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.location-text {
+  font-size: 1.2rem;
+  color: #b7791f; /* Warm Gold */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Mission/Vision Section */
+.purpose-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.purpose-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.purpose-item.reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.icon-box {
+  min-width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.blue-icon { background: #ebf8ff; color: #3182ce; }
+.gold-icon { background: #fffaf0; color: #dd6b20; }
+.green-icon { background: #f0fff4; color: #38a169; }
+
+.text-box h2 {
+  font-size: 1.8rem;
+  color: #1a365d;
+  margin-bottom: 10px;
+}
+
+/* History Grid Section */
+.history-container {
+  background-color: #f7fafc;
+  padding: 80px 20px;
+}
+
+.history-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.accent-line {
+  width: 50px;
+  height: 4px;
+  background: #b7791f;
+  margin: 15px auto;
+}
+
+.school-history-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.history-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  transition: transform 0.3s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.history-icon-wrapper {
+  color: #1a365d;
+  margin-bottom: 15px;
+}
+
+.history-card h3 {
+  color: #1a365d;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.history-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4a5568;
+}
+
+/* Responsive Tablet/Mobile */
+@media (max-width: 768px) {
+  .purpose-item, .purpose-item.reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .school-header h1 {
+    font-size: 1.8rem;
+  }
+}

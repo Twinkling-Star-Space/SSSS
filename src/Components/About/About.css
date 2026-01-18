@@ -1,0 +1,86 @@
+.about {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  gap: 10px;
+}
+
+/* Wrapper for image & play icon */
+.about-img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.about_img {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+/* Play icon perfectly centered */
+.play_icon {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* Text styles */
+.about h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 20px 0;
+  color: #333;
+  max-width: 500px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.about button {
+  display: flex;
+  gap: 20px;
+  border: none;
+  background: #f1c40f;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.about button img {
+  width: 30px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 800px) {
+  .play_icon {
+    width: 40px;
+  }
+
+  .about button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .play_icon {
+    width: 30px;
+  }
+
+  .about button {
+    font-size: 12px;
+  }
+}
